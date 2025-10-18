@@ -464,25 +464,28 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div class="subsct-contain">
-        <p class="text-subscribe">Subscribe</p>
-        <form class="footer-form">
-          <label class="footer-form-field">
+
+        <div class="subsct-contain">
+          <p class="text-subscribe">Subscribe</p>
+          <form class="footer-form">
+            <label for="subscribe-email" class="visually-hidden"
+              >User email</label
+            >
             <input
               class="footer-form-input"
               type="email"
+              id="subscribe-email"
               name="subscribe-email"
               placeholder="E-mail"
             />
-          </label>
-          <button class="button-subscribe" type="submit">
-            Subscribe
-            <svg class="subscribe-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-frame"></use>
-            </svg>
-          </button>
-        </form>
+            <button class="button-subscribe" type="submit">
+              Subscribe
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-frame"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- Modal Window -->
@@ -560,7 +563,6 @@
               type="checkbox"
               name="user-agreement"
               id="user-agreement"
-              checked
             />
             <label class="agreement-wrapper" for="user-agreement">
               <span class="agreement-checkbox">
